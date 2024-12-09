@@ -7,7 +7,7 @@ import EnFlag from "../assets/en.png";
 function Navbar() {
   return (
     <div className="bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
+      <div className="container mx-auto flex justify-between items-center py-4 px-14">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <img
@@ -15,7 +15,7 @@ function Navbar() {
             alt="Logo"
             className="h-10"
           />
-          <span className="text-xl font-medium">
+          <span className="text-xl font-normal">
             Bilim va malakalarni 
             <br></br>
             baholash agentligi
@@ -59,7 +59,7 @@ function Navbar() {
         {/* Call Center Info */}
         <div className="flex items-center space-x-8">
           {/* Call Center Status */}
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-col  items-end space-x-2">
             <span className="font-medium">Call center</span>
             <div className="flex items-center space-x-1">
               <span className="text-green-500 text-xs">●</span>
