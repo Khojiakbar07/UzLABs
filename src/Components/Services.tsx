@@ -1,59 +1,62 @@
+import PlayMarket from "../assets/Icons/play_market.svg";
+import AppStore from "../assets/Icons/app_store.svg";
+import QRCode from "../assets/qr-code.svg";
 
 const Services = () => {
   return (
-    <div className="bg-[#ffffff] max-w-screen-xl mx-auto my-auto">
+    <div className="bg-[#f8f8fa] max-w-screen-xl mx-auto mb-12">
     <h2 className="text-3xl font-semibold text-center">Xizmatlar</h2>
-
-    <div className="grid grid-cols-6 gap-4 mt-6">
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-xl">
-            <p className="text-center mt-2">Asosiy</p>
+    <div className="flex grid-cols-6 mt-6 gap-6 justify-start">
+        <div className="flex flex-col items-center w-max py-1 px-4 bg-[#17776a] text-white  rounded-2xl shadow-lg">
+            <p className="text-center text-base font-semibold">Asosiy</p>
         </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-xl">
-            <img src="icon2.svg" alt="Icon 2" className="w-12 h-12" />
-            <p className="text-center mt-2">Qabul uchun</p>
+        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+            <p className="text-center text-xs font-semibold">Qabul uchun</p>
         </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-xl">
-            <img src="icon3.svg" alt="Icon 3" className="w-12 h-12" />
-            <p className="text-center mt-2">Natijani ko'rish</p>
+        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+            <p className="text-center text-xs font-semibold">Natijani ko'rish</p>
         </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-xl">
-            <img src="icon4.svg" alt="Icon 4" className="w-12 h-12" />
-            <p className="text-center mt-2">Abituriyent ruxsatnomasi</p>
+        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+            <p className="text-center text-xs font-semibold">Abituriyent ruxsatnomasi</p>
         </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon5.svg" alt="Icon 5" className="w-12 h-12" />
-            <p className="text-center mt-2">Diagnostik test</p>
+        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+            <p className="text-center text-xs font-semibold">Diagnostik test</p>
         </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon6.svg" alt="Icon 6" className="w-12 h-12" />
-            <p className="text-center mt-2">Milliy sertifikatlar</p>
-        </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon7.svg" alt="Icon 7" className="w-12 h-12" />
-            <p className="text-center mt-2">Guruh nazoratchiligiga birinchi tanlov</p>
-        </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon8.svg" alt="Icon 8" className="w-12 h-12" />
-            <p className="text-center mt-2">Davlat xavfsizlik xizmati akademiyasi</p>
-        </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon9.svg" alt="Icon 9" className="w-12 h-12" />
-            <p className="text-center mt-2">Ruxsatnomani olish</p>
-        </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon10.svg" alt="Icon 10" className="w-12 h-12" />
-            <p className="text-center mt-2">Diagnostik test materiallarini elektron shaklda olish</p>
-        </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon11.svg" alt="Icon 11" className="w-12 h-12" />
-            <p className="text-center mt-2">Diagnostik test materiallariga buyurtma berish</p>
-        </div>
-        <div className="flex flex-col items-center bg-white p-4 rounded-lg shadow-sm">
-            <img src="icon12.svg" alt="Icon 12" className="w-12 h-12" />
-            <p className="text-center mt-2">Diagnostik test sinovlari natijasini onlayn tekshirish</p>
+        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+            <p className="text-center text-xs font-semibold">Milliy sertifikatlar</p>
         </div>
     </div>
-</div>
+
+
+
+
+
+    <div className="bg-[#f8f8fa] py-6 px-8 rounded-xl shadow-lg border border-gray-200 max-w-screen-xl mx-auto my-14">
+    <div className="flex justify-between items-center">
+        <div className="max-w-lg">
+            <h1 className="text-2xl font-semibold ">MyUzMobile - barchasi o'z qo'lingizda!</h1>
+            <p>Mobil ilovamni yuklab olish uchun Google Play yoki App Store maketga quyidagi tugma orqali o'ting yoki QR kodni skaner qiling.</p>
+            <div className="flex gap-4 mt-4">
+                <a href="#" className="bg-white text-black pr-4 py-2 rounded-md">
+                    <img src={PlayMarket} alt="Google Play" className="w-17 h-17" />
+                </a>
+                <a href="#" className="bg-gray-100 text-black pr-4 py-2 rounded-md ">
+                    <img src={AppStore} alt="App Store" className="w-17 h-17" />
+                </a>
+            </div>
+        </div>
+        <div>
+            <img src={QRCode} alt="QR Code" className="w-24 h-24" />
+        </div>
+    </div>
+    </div>
+
+
+   </div>
+
+   
+
+
   );
 };
 
