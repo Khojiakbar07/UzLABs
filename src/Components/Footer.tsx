@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="bg-white text-black shadow-md">
+    <div className="bg-white text-black shadow-md max-w-8xl mx-auto">
       {" "}
       <div className="container mx-auto flex justify-between items-center py-4 px-14">
         {/* Logo Section */}
@@ -21,7 +21,7 @@ function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center space-x-8">
+        <div className=" bg-[#f8f8fa] flex items-center space-x-8">
           {/* Call Center Info */}
           <div className="flex items-center space-x-8">
             {/* Call Center Status */}

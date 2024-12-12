@@ -59,11 +59,11 @@ const PartnersCarousel = () => {
   };
 
   return (
-    <div className="bg-[#f8f8fa] py-8">
+    <div className="bg-[#f8f8fa] py-8 ">
       <h2 className=" text-[#76818f] text-2xl font-semibold text-center mb-6">
         Hamkor tashkilotlar
       </h2>
-      <div className="max-w-8xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <Slider {...settings}>
           {partners.map((partner) => (
             <div key={partner.id} className="px-4">
