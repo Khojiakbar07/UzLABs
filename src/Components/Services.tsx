@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import PlayMarket from "../assets/Icons/play_market.svg";
 import AppStore from "../assets/Icons/app_store.svg";
 import QRCode from "../assets/qr-code.svg";
@@ -12,21 +14,21 @@ const Services = () => {
         <div className="flex flex-col items-center w-max py-1 px-4 bg-[#17776a] text-white  rounded-2xl shadow-lg">
             <p className="text-center text-base font-semibold">Asosiy</p>
         </div>
-        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
             <p className="text-center text-xs font-semibold">Qabul uchun</p>
-        </div>
-        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+        </button>
+        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
             <p className="text-center text-xs font-semibold">Natijani ko'rish</p>
-        </div>
-        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+        </button>
+        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
             <p className="text-center text-xs font-semibold">Abituriyent ruxsatnomasi</p>
-        </div>
-        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+        </button>
+        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
             <p className="text-center text-xs font-semibold">Diagnostik test</p>
-        </div>
-        <div className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
+        </button>
+        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
             <p className="text-center text-xs font-semibold">Milliy sertifikatlar</p>
-        </div>
+        </button>
     </div>
 
     <div className="bg-gray-50 py-4">
