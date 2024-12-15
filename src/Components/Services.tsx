@@ -52,7 +52,7 @@ const Services = () => {
         <div className="bg-[#f8f8fa] py-6 px-8 rounded-xl shadow-lg border border-gray-200 max-w-screen-xl mx-auto my-14">
       <div className="flex justify-between items-center">
         <div className="max-w-lg">
-            <h1 className="text-2xl font-semibold ">MyUzMobile - barchasi o'z qo'lingizda!</h1>
+            <h1 className="text-2xl font-semibold ">UZLABs - barchasi o'z qo'lingizda!</h1>
             <p>Mobil ilovamni yuklab olish uchun Google Play yoki App Store maketga quyidagi tugma orqali o'ting yoki QR kodni skaner qiling.</p>
             <div className="flex gap-4 mt-4">
                 <a href="#" className="bg-white text-black pr-4 py-2 rounded-md">

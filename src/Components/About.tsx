@@ -6,7 +6,7 @@ function About() {
   return (
     <section className="py-12 bg-[#f8f8fa]">
       <header className="bg-white rounded-xl shadow-lg border border-white px-12 py-12 flex flex-col items-start max-w-screen-xl mx-auto">
-        <h1 className="text-4xl font-semibold text-left">Bilim va malakalarni baholash agentligi "Virtual markaz" interaktiv xizmatlar portaliga xush kelibsiz!</h1>
+        <h1 className="text-4xl font-semibold text-left">Uzlabs — bu xususiy sog‘liqni saqlash va diagnostika "Virtual markaz" interaktiv xizmatlar portaliga xush kelibsiz!</h1>
           <div className="flex gap-4 mt-4">
            <button className="bg-[#17776a] font-medium border border-[#17776a] text-white px-4 py-2 rounded-xl hover:bg-[#115c52] hover:text-white">Kirish</button>
            <button className="bg-white font-medium border border-[#17776a] text-[#17776a] px-4 py-2 rounded-xl hover:bg-[#115c52] hover:text-white">Ro'yxatdan o'tish</button>

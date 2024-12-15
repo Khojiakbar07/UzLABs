@@ -14,9 +14,9 @@ function Footer() {
             className="h-10"
           />
           <span className="text-xl font-normal">
-            Bilim va malakalarni
+            sog‘liqni saqlash va
             <br />
-            baholash agentligi
+            diagnostika markazi
           </span>
         </div>
 
