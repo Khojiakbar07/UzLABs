@@ -13,60 +13,75 @@ const tabs = [
   { id: "natija", label: "Natijani ko'rish" },
   { id: "ruxsatnoma", label: "Abituriyent ruxsatnomasi" },
 ];
+
 const Services = () => {
   const [activeTab, setActiveTab] = useState("asosiy");
 
   return (
     <div className="bg-[#f8f8fa]">
-      <div className="bg-[#f8f8fa] max-w-screen-xl mx-auto mb-12">
+      <div className="max-w-screen-xl mx-auto px-6 mb-12">
         {/* Header */}
-        <h2 className="text-3xl font-semibold text-center">Xizmatlar</h2>
+        <h2 className="text-3xl sm:text-2xl text-center font-semibold py-6">Xizmatlar</h2>
 
         {/* Tabs */}
-        <div className="flex grid-cols-4 md:grid-cols-5 mt-6 gap-6 md:gap-4 justify-start max-md:justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center items-center">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex flex-col items-center w-max py-2 md:py-1 px-4 rounded-2xl shadow-lg ${
-                activeTab === tab.id ? "bg-[#17776a] text-white" : "bg-white text-gray-700"
+              className={`py-2 px-4 rounded-2xl shadow-md text-sm sm:text-base font-semibold transition-all ${
+                activeTab === tab.id
+                  ? "bg-[#17776a] text-white"
+                  : "bg-white text-gray-700 hover:bg-gray-100"
               }`}
             >
-              <p className="text-center text-sm font-semibold">{tab.label}</p>
+              {tab.label}
             </button>
           ))}
         </div>
 
         {/* Cards Section */}
-        <div className="bg-gray-50 py-4">
-          <div className="max-w-screen-xl mx-auto">
+        <div className="bg-gray-50 py-4 mt-6 rounded-lg shadow-md">
+          <div className="px-4 sm:px-8">
             {activeTab === "asosiy" && <AsosiyServices />}
             {activeTab === "qabul" && <QabulServices />}
-            {activeTab == "natija" && <Result/>}
-            {activeTab == "ruxsatnoma" && <Ruxsatnoma/> }
+            {activeTab === "natija" && <Result />}
+            {activeTab === "ruxsatnoma" && <Ruxsatnoma />}
           </div>
         </div>
 
-        {/* QR Code for  */}
-        <div className="bg-[#f8f8fa] py-6 px-8 rounded-xl shadow-lg border border-gray-200 max-w-screen-xl mx-auto my-14">
-      <div className="flex justify-between items-center">
-        <div className="max-w-lg">
-            <h1 className="text-2xl font-semibold ">UZLABs - barchasi o'z qo'lingizda!</h1>
-            <p>Mobil ilovamni yuklab olish uchun Google Play yoki App Store maketga quyidagi tugma orqali o'ting yoki QR kodni skaner qiling.</p>
-            <div className="flex gap-4 mt-4">
-                <a href="#" className="bg-white text-black pr-4 py-2 rounded-md">
-                    <img src={PlayMarket} alt="Google Play" className="w-17 h-17" />
+        {/* QR Code Section */}
+        <div className="bg-white py-6 px-4 sm:px-8 rounded-xl shadow-lg border border-gray-200 mt-14">
+          <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-6">
+            {/* Text Section */}
+            <div className="text-center sm:text-left">
+              <h1 className="text-xl sm:text-2xl font-semibold mb-2">
+                UZLABs - barchasi o'z qo'lingizda!
+              </h1>
+              <p className="text-gray-700 text-sm sm:text-base mb-4">
+                Mobil ilovani yuklab olish uchun Google Play yoki App Store-ga quyidagi tugma orqali
+                o'ting yoki QR kodni skaner qiling.
+              </p>
+              <div className="flex justify-center sm:justify-start gap-4">
+                <a href="#" className="hover:opacity-90">
+                  <img src={PlayMarket} alt="Google Play" className="w-32 h-10" />
                 </a>
-                <a href="#" className="bg-gray-100 text-black pr-4 py-2 rounded-md ">
-                    <img src={AppStore} alt="App Store" className="w-17 h-17" />
+                <a href="#" className="hover:opacity-90">
+                  <img src={AppStore} alt="App Store" className="w-32 h-10" />
                 </a>
+              </div>
             </div>
+
+            {/* QR Code Image */}
+            <div className="flex justify-center">
+              <img
+                src={QRCode}
+                alt="QR Code"
+                className="w-32 h-32 sm:w-28 sm:h-28 md:w-36 md:h-36"
+              />
+            </div>
+          </div>
         </div>
-        <div>
-            <img src={QRCode} alt="QR Code" className="w-24 h-24" />
-        </div>
-      </div>
-     </div>
       </div>
     </div>
   );

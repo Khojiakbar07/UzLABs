@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        'max-412': {'max': '412px'},
-        'max-390': {'max': '390px'},
-        'max-375': {'max': '375px'},
-        'max-360': {'max': '360px'},
+        'max-541': {'max': '541px'},
+        'max-413': {'max': '412px'},
+        'max-391': {'max': '391px'},
+        'max-376': {'max': '376px'},
+        'max-361': {'max': '361px'},
       },
     },
   },
