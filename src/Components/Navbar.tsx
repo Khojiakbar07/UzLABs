@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/logo.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
