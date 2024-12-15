@@ -1,51 +1,27 @@
-import Icon from "../assets/Icons/inspector1.svg";
+import Icon from "../../assets/Icons/inspector1.svg"
+import Icon1 from "../../assets/Icons/dxx.svg"
+import Icon2 from "../../assets/Icons/study.svg"
 
+const QabulServices = () => {
+  const services = [
+    { id: 1, title: "Professional ta’lim muassasalariga qabul", icon: Icon },
+    { id: 2, title: "Fan va texnologiyalar universitetiga qabul", icon: Icon1 },
+    { id: 3, title: "O‘qishni ko‘chirish (xorijiy va nodavlat) Natija", icon: Icon2 },
+  ];
 
-function admintion() {
-    return (
-<div className="bg-gray-50 py-4">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">admintion</p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">admintion</p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">admintion</p>
-          </div>
-
-          {/* Card 4 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">admintion</p>
-          </div>
-
-          {/* Card 5 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">admintion</p>
-          </div>
-
-          {/* Card 6 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">admintion</p>
-          </div>
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <div
+          key={service.id}
+          className="flex flex-row jjustify-start items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow"
+        >
+          <img src={service.icon} alt={service.title} className="w-7 h-7 mx-2" />
+          <p className="text-left text-sm text-gray-800 font-medium">{service.title}</p>
         </div>
-      </div>
+      ))}
     </div>
+  );
+};
 
-);
-}
-
-export default admintion;
+export default QabulServices;

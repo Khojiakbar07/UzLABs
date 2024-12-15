@@ -1,79 +1,55 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import PlayMarket from "../assets/Icons/play_market.svg";
 import AppStore from "../assets/Icons/app_store.svg";
 import QRCode from "../assets/qr-code.svg";
-import Icon from "../assets/Icons/inspector1.svg";
+import AsosiyServices from "./Services/main";
+import QabulServices from "./Services/admission";
+import Result from "./Services/result";
+
+const tabs = [
+  { id: "asosiy", label: "Asosiy" },
+  { id: "qabul", label: "Qabul uchun" },
+  { id: "natija", label: "Natijani ko'rish" },
+  { id: "ruxsatnoma", label: "Abituriyent ruxsatnomasi" },
+  { id: "test", label: "Diagnostik test" },
+  { id: "sertifikat", label: "Milliy sertifikatlar" },
+];
 
 const Services = () => {
+  const [activeTab, setActiveTab] = useState("asosiy");
+
   return (
-    <div className="bg-[#f8f8fa] ">
-    <div className="bg-[#f8f8fa] max-w-screen-xl mx-auto mb-12">
-    <h2 className="text-3xl font-semibold text-center">Xizmatlar</h2>
-    <div className="flex grid-cols-6 mt-6 gap-6 justify-start">
-        <div className="flex flex-col items-center w-max py-1 px-4 bg-[#17776a] text-white  rounded-2xl shadow-lg">
-            <p className="text-center text-base font-semibold">Asosiy</p>
+    <div className="bg-[#f8f8fa]">
+      <div className="bg-[#f8f8fa] max-w-screen-xl mx-auto mb-12">
+        {/* Header */}
+        <h2 className="text-3xl font-semibold text-center">Xizmatlar</h2>
+
+        {/* Tabs */}
+        <div className="flex grid-cols-6 mt-6 gap-6 justify-start">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex flex-col items-center w-max py-2 px-4 rounded-2xl shadow-lg ${
+                activeTab === tab.id ? "bg-[#17776a] text-white" : "bg-white text-gray-700"
+              }`}
+            >
+              <p className="text-center text-sm font-semibold">{tab.label}</p>
+            </button>
+          ))}
         </div>
-        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
-            <p className="text-center text-xs font-semibold">Qabul uchun</p>
-        </button>
-        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
-            <p className="text-center text-xs font-semibold">Natijani ko'rish</p>
-        </button>
-        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
-            <p className="text-center text-xs font-semibold">Abituriyent ruxsatnomasi</p>
-        </button>
-        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
-            <p className="text-center text-xs font-semibold">Diagnostik test</p>
-        </button>
-        <button className="flex flex-col items-center w-max py-2 px-4 bg-white rounded-2xl shadow-lg">
-            <p className="text-center text-xs font-semibold">Milliy sertifikatlar</p>
-        </button>
-    </div>
 
-    <div className="bg-gray-50 py-4">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">Ilmiy-o'quv amaliy markazi</p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">Ilmiy-o'quv amaliy markazi</p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">Ilmiy-o'quv amaliy markazi</p>
-          </div>
-
-          {/* Card 4 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">Ilmiy-o'quv amaliy markazi</p>
-          </div>
-
-          {/* Card 5 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">Ilmiy-o'quv amaliy markazi</p>
-          </div>
-
-          {/* Card 6 */}
-          <div className="flex flex-row justify-center items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow">
-            <img src={Icon} alt="Megaphone" className="w-6 h-6 mx-4 justify-center items-center"/>
-            <p className="text-center text-xl text-gray-800 font-medium">Ilmiy-o'quv amaliy markazi</p>
+        {/* Cards Section */}
+        <div className="bg-gray-50 py-4">
+          <div className="max-w-screen-xl mx-auto">
+            {activeTab === "asosiy" && <AsosiyServices />}
+            {activeTab === "qabul" && <QabulServices />}
+            {activeTab == "natija" && <Result/>}
           </div>
         </div>
-      </div>
-    </div>
 
-    <div className="bg-[#f8f8fa] py-6 px-8 rounded-xl shadow-lg border border-gray-200 max-w-screen-xl mx-auto my-14">
+        {/* QR Code for  */}
+        <div className="bg-[#f8f8fa] py-6 px-8 rounded-xl shadow-lg border border-gray-200 max-w-screen-xl mx-auto my-14">
       <div className="flex justify-between items-center">
         <div className="max-w-lg">
             <h1 className="text-2xl font-semibold ">MyUzMobile - barchasi o'z qo'lingizda!</h1>
@@ -92,8 +68,8 @@ const Services = () => {
         </div>
       </div>
      </div>
+      </div>
     </div>
-   </div>
   );
 };
 
