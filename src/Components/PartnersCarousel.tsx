@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import Oxford from "../assets/Icons/oxford.jpg";
 import Scantron from "../assets/Icons/scantron.jpg";
