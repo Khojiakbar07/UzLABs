@@ -43,7 +43,7 @@ function Footer() {
       </div>
       <div className="container text-xs mx-auto text-center flex justify-between px-14 pb-2">
         <p>&copy;Barcha huquqlar himoyalangan 2024</p>
-        <p>Materiallardan foydalanganda my.uzbmb.uzga havola bo‘lishi shart.</p>
+        <p>Materiallardan foydalanganda Uzlabs.uzga havola bo‘lishi shart.</p>
       </div>
     </div>
   );
