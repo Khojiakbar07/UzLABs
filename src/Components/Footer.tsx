@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="bg-white text-black shadow-sm max-w-8xl">
       {" "}
-      <div className="container mx-auto flex justify-between items-center py-4 px-14">
+      <div className="container mx-auto flex justify-between items-center py-4 px-14 max-md:px-0">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <img
@@ -13,7 +13,7 @@ function Footer() {
             alt="Logo"
             className="h-10"
           />
-          <span className="text-xl font-normal">
+          <span className="text-xl md:text-lg font-normal">
             sog‘liqni saqlash va
             <br />
             diagnostika markazi
@@ -21,11 +21,11 @@ function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className=" bg-[#f8f8fa] flex items-center space-x-8">
+        <div className=" bg-[#f8f8fa] flex items-center space-x-8 max-md:space-x-7 max-sm:space-x-6">
           {/* Call Center Info */}
           <div className="flex items-center space-x-8">
             {/* Call Center Status */}
-            <div className="flex flex-col items-end space-x-2">
+            <div className="flex flex-col items-end space-x-2 max-sm:space-x-0">
               <span className="text-black font-normal">Call center</span>
               <div className="flex items-center space-x-1">
                 <span className="text-green-500 text-xs">●</span>
@@ -41,7 +41,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="container text-xs mx-auto text-center flex justify-between px-14 pb-2">
+      <div className="container text-xs mx-auto text-center flex justify-between px-14 max-md:px-0 pb-2">
         <p>&copy;Barcha huquqlar himoyalangan 2024</p>
         <p>Materiallardan foydalanganda Uzlabs.uzga havola bo‘lishi shart.</p>
       </div>

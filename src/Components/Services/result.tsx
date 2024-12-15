@@ -1,11 +1,10 @@
-import Icon from "../../assets/Icons/study.svg"
-import Icon3 from "../../assets/Icons/online_check.svg"
+import Icon from "../../assets/Icons/Lab.png";
+import Icon1 from "../../assets/Icons/diagnostic.png";
 
 const Result = () => {
   const services = [
-    { id: 1, title: "Natijani ko‘rish", icon: Icon3 },
-    { id: 2, title: "O‘qishni ko‘chirish (xorijiy va nodavlat) Natija", icon: Icon },
-
+    { id: 1, title: "Labaratoriya natijalarini ko‘rish", icon: Icon },
+    { id: 2, title: "Diagnostika natijalarini ko‘rish", icon: Icon1 },
   ];
 
   return (

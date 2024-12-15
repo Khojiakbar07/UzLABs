@@ -30,15 +30,15 @@ function Navbar() {
 
   return (
     <div className="bg-white shadow-lg max-w-8xl sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center py-4 px-14">
+      <div className="container mx-auto flex justify-between items-center py-4 px-14 max-md:px-0">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <img
             src={logo}
             alt="Logo"
-            className="h-10"
+            className="h-10 max-md:h-8"
           />
-          <span className="text-xl font-normal leading-tight">
+          <span className="text-xl max-md:text-lg max-sm:text-sm font-normal leading-tight">
             sog‘liqni saqlash va
             <br />
             diagnostika markazi
@@ -46,7 +46,7 @@ function Navbar() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center space-x-8">
+        <div className="flex items-center space-x-8 max-md:space-x-7 max-sm:space-x-6">
           {/* Language Dropdown */}
           <div className="relative">
             <button

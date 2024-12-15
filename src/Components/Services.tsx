@@ -5,16 +5,14 @@ import QRCode from "../assets/qr-code.svg";
 import AsosiyServices from "./Services/main";
 import QabulServices from "./Services/admission";
 import Result from "./Services/result";
+import Ruxsatnoma from "./Services/permit";
 
 const tabs = [
   { id: "asosiy", label: "Asosiy" },
   { id: "qabul", label: "Qabul uchun" },
   { id: "natija", label: "Natijani ko'rish" },
   { id: "ruxsatnoma", label: "Abituriyent ruxsatnomasi" },
-  { id: "test", label: "Diagnostik test" },
-  { id: "sertifikat", label: "Milliy sertifikatlar" },
 ];
-
 const Services = () => {
   const [activeTab, setActiveTab] = useState("asosiy");
 
@@ -25,12 +23,12 @@ const Services = () => {
         <h2 className="text-3xl font-semibold text-center">Xizmatlar</h2>
 
         {/* Tabs */}
-        <div className="flex grid-cols-6 mt-6 gap-6 justify-start">
+        <div className="flex grid-cols-4 md:grid-cols-5 mt-6 gap-6 md:gap-4 justify-start max-md:justify-center">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex flex-col items-center w-max py-2 px-4 rounded-2xl shadow-lg ${
+              className={`flex flex-col items-center w-max py-2 md:py-1 px-4 rounded-2xl shadow-lg ${
                 activeTab === tab.id ? "bg-[#17776a] text-white" : "bg-white text-gray-700"
               }`}
             >
@@ -45,6 +43,7 @@ const Services = () => {
             {activeTab === "asosiy" && <AsosiyServices />}
             {activeTab === "qabul" && <QabulServices />}
             {activeTab == "natija" && <Result/>}
+            {activeTab == "ruxsatnoma" && <Ruxsatnoma/> }
           </div>
         </div>
 

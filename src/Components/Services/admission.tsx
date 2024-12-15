@@ -1,12 +1,14 @@
-import Icon from "../../assets/Icons/inspector1.svg"
-import Icon1 from "../../assets/Icons/dxx.svg"
-import Icon2 from "../../assets/Icons/study.svg"
+import Icon from "../../assets/Icons/Lab.png"
+import Icon1 from "../../assets/Icons/diagnostic.png"
+import Icon2 from "../../assets/Icons/icons8-health-checkup-96.png"
+import Icon3 from "../../assets/Icons/therapy.png"
 
 const QabulServices = () => {
   const services = [
-    { id: 1, title: "Professional ta’lim muassasalariga qabul", icon: Icon },
-    { id: 2, title: "Fan va texnologiyalar universitetiga qabul", icon: Icon1 },
-    { id: 3, title: "O‘qishni ko‘chirish (xorijiy va nodavlat) Natija", icon: Icon2 },
+    { id: 1, title: "Labaratoriya uchun qabulga yozilish", icon: Icon },
+    { id: 2, title: "Diagnostika uchun qabulga yozilish", icon: Icon1 },
+    { id: 3, title: "Pediatriya uchun qabulga yozilish", icon: Icon2 },
+    { id: 4, title: "Terapiya uchun qabulga yozilish", icon: Icon3 },
   ];
 
   return (
