@@ -7,7 +7,7 @@ import Icon5 from "../../assets/Icons/diagnostic.png"
 import Icon6 from "../../assets/Icons/icons8-health-checkup-96.png"
 import Icon7 from "../../assets/Icons/therapy.png"
 
-const AsosiyServices = () => {
+const MainServices = () => {
   const services = [
     { id: 1, title: "Guruh nazoratchiligiga birinchi tanlov bo'limi", icon: Icon },
     { id: 2, title: "Davlat xavfsizlik xizmati akademiyasi", icon: Icon1 },
@@ -35,4 +35,4 @@ const AsosiyServices = () => {
   );
 };
 
-export default AsosiyServices;
+export default MainServices;

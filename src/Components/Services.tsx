@@ -2,10 +2,10 @@ import { useState } from "react";
 import PlayMarket from "../assets/Icons/play_market.svg";
 import AppStore from "../assets/Icons/app_store.svg";
 import QRCode from "../assets/qr-code.svg";
-import AsosiyServices from "./Services/main";
-import QabulServices from "./Services/admission";
-import Result from "./Services/result";
-import Ruxsatnoma from "./Services/permit";
+import MainServices from "./services/Main";
+import AdmissionServices from "./services/Admission";
+import Result from "./services/Result";
+import Permit from "./services/Permit";
 
 const tabs = [
   { id: "asosiy", label: "Asosiy" },
@@ -43,10 +43,10 @@ const Services = () => {
         {/* Cards Section */}
         <div className="bg-gray-50 py-4 mt-6 rounded-lg shadow-md">
           <div className="px-4 sm:px-8">
-            {activeTab === "asosiy" && <AsosiyServices />}
-            {activeTab === "qabul" && <QabulServices />}
+            {activeTab === "asosiy" && <MainServices />}
+            {activeTab === "qabul" && <AdmissionServices/>}
             {activeTab === "natija" && <Result />}
-            {activeTab === "ruxsatnoma" && <Ruxsatnoma />}
+            {activeTab === "ruxsatnoma" && <Permit/>}
           </div>
         </div>
 
