@@ -3,7 +3,7 @@ import Icon1 from "../../assets/Icons/diagnostic.png"
 import Icon2 from "../../assets/Icons/icons8-health-checkup-96.png"
 import Icon3 from "../../assets/Icons/therapy.png"
 
-const QabulServices = () => {
+const AdmissionService = () => {
   const services = [
     { id: 1, title: "Labaratoriya uchun qabulga yozilish", icon: Icon },
     { id: 2, title: "Diagnostika uchun qabulga yozilish", icon: Icon1 },
@@ -26,4 +26,4 @@ const QabulServices = () => {
   );
 };
 
-export default QabulServices;
+export default AdmissionService;
