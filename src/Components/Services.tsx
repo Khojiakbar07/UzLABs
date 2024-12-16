@@ -4,7 +4,7 @@ import AppStore from "../assets/Icons/app_store.svg";
 import QRCode from "../assets/qr-code.svg";
 import AsosiyServices from "./Services/main";
 import QabulServices from "./Services/admission";
-import Result from "./Services/Result";
+// import Result from "./services/Result";
 import Ruxsatnoma from "./Services/permit";
 
 const tabs = [
@@ -45,7 +45,7 @@ const Services = () => {
           <div className="px-4 sm:px-8">
             {activeTab === "asosiy" && <AsosiyServices />}
             {activeTab === "qabul" && <QabulServices />}
-            {activeTab === "natija" && <Result />}
+            {/* {activeTab === "natija" && <Result />} */}
             {activeTab === "ruxsatnoma" && <Ruxsatnoma/>}
           </div>
         </div>
