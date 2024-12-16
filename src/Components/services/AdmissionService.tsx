@@ -16,10 +16,10 @@ const AdmissionService = () => {
       {services.map((service) => (
         <div
           key={service.id}
-          className="flex flex-row jjustify-start items-center bg-white p-8 rounded-2xl shadow hover:shadow-xl transition-shadow"
+          className="flex flex-row jjustify-start items-center bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-shadow"
         >
           <img src={service.icon} alt={service.title} className="w-7 h-7 mx-2" />
-          <p className="text-left text-sm text-gray-800 font-medium">{service.title}</p>
+          <p className="text-left text-xl md:text-lg text-gray-800 font-medium">{service.title}</p>
         </div>
       ))}
     </div>
