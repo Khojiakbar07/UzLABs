@@ -4,7 +4,7 @@ import AppStore from "../assets/Icons/app_store.svg";
 import QRCode from "../assets/qr-code.svg";
 import AsosiyServices from "./Services/main";
 import QabulServices from "./Services/admission";
-import Result from "./services/Result";
+import Result from "./Services/Result";
 import Ruxsatnoma from "./Services/permit";
 
 const tabs = [
