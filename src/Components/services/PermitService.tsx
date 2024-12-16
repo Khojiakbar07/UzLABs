@@ -1,5 +1,5 @@
 import NotFound from "../../assets/Icons/certificate-not-found.svg";
-function permit() {
+function PermitService() {
   return (
     <div className="flex flex-col items-center text-center mt-8">
       <img className="flex justify-end items-center" src={NotFound} alt="Not Found" />
@@ -8,4 +8,4 @@ function permit() {
   );
 }
 
-export default permit;
+export default PermitService;
