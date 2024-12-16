@@ -3,6 +3,9 @@ import About from "./Components/About";
 import Services from "./Components/Services";
 import Footer from "./Components/Footer";
 import PartnersCarousel from "./Components/PartnersCarousel";
+import CarouselBanner from "./Components/CarouselBanner";
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 function App() {
@@ -11,6 +14,7 @@ function App() {
       <Navbar />
       {/* Main Content */}
       <main>
+        <CarouselBanner/>
         <About/>
         <Services/>
         <PartnersCarousel/>

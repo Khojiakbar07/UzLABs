@@ -28,34 +28,39 @@ const PartnersCarousel = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Show 4 slides at a time
+    slidesToShow: 4, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true, // Center items
-    centerPadding: "40px", // Add space around center
+    centerMode: true,
+    centerPadding: "40px",
+    arrows: false, 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
+          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          arrows: false,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          centerMode: false, // Disable centering for mobile
+          centerMode: false,
+          arrows: false,
         },
       },
     ],
   };
+  
 
   return (
     <div className="bg-[#f8f8fa] py-8 ">
