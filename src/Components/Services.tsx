@@ -46,7 +46,7 @@ const Services = () => {
             {activeTab === "asosiy" && <AsosiyServices />}
             {activeTab === "qabul" && <QabulServices />}
             {activeTab === "natija" && <Result />}
-            {activeTab === "ruxsatnoma" && <Ruxsatnoma />}
+            {activeTab === "ruxsatnoma" && <Permit/>}
           </div>
         </div>
 
