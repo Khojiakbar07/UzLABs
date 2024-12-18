@@ -33,9 +33,7 @@ function Navbar() {
         <div className="flex items-center space-x-4">
           <img src={logo} alt="Logo" className="h-8 md:h-10" />
           <span className="hidden sm:block text-sm md:text-lg font-normal leading-tight">
-            sog‘liqni saqlash va
-            <br />
-            diagnostika markazi
+            Uzlab.uz
           </span>
         </div>
 
@@ -44,7 +42,7 @@ function Navbar() {
           {/* Language Dropdown */}
           <div className="relative">
             <button
-              className="flex items-center space-x-2 px-2 py-1 rounded-lg"
+              className="flex items-center space-x-4 px-2 py-1 rounded-lg"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <img src={currentLanguage.flag} alt="Flag" className="h-4" />
@@ -65,7 +63,7 @@ function Navbar() {
             </button>
 
             {isDropdownOpen && (
-              <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg w-24">
+              <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg w-28">
                 <ul className="text-gray-700">
                   {languages.map((lang) => (
                     <li

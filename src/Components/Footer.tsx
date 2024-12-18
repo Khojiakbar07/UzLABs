@@ -13,7 +13,7 @@ function Footer() {
             className="h-8 md:h-10"
           />
           <span className="text-sm md:text-lg font-normal leading-tight hidden sm:block">
-            sog‘liqni saqlash va <br /> diagnostika markazi
+            Uzlab.uz
           </span>
         </div>
 
