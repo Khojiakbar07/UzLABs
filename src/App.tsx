@@ -4,6 +4,7 @@ import Services from "./Components/Services";
 import Footer from "./Components/Footer";
 import PartnersCarousel from "./Components/PartnersCarousel";
 import CarouselBanner from "./Components/CarouselBanner";
+import BottomNavBar from "./Components/BottomNavBar";
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +21,7 @@ function App() {
         <PartnersCarousel/>
         <Footer/>
       </main>
+      <BottomNavBar/>
     </div>
   );
 }
