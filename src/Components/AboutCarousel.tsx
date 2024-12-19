@@ -51,7 +51,6 @@ const AboutCarousel = () => {
     ],
   };
   
-
   return (
     <div className="bg-[#f8f8fa] py-8 ">
       <div className="max-w-7xl mx-auto px-4">

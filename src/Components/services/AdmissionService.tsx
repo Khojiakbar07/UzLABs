@@ -1,25 +1,32 @@
-import Icon from "../../assets/Icons/laboratory.png"
-import Icon1 from "../../assets/Icons/diagnostics.png"
-import Icon2 from "../../assets/Icons/health-checkup.png"
-import Icon3 from "../../assets/SideBar-Icons/therapy.png"
+import React from "react";
+import { FaFlask, FaUserMd, FaStethoscope, FaClinicMedical } from "react-icons/fa";
 
 const AdmissionService = () => {
   const services = [
-    { id: 1, title: "Labaratoriya uchun qabulga yozilish", icon: Icon },
-    { id: 2, title: "Diagnostika uchun qabulga yozilish", icon: Icon1 },
-    { id: 3, title: "Pediatriya uchun qabulga yozilish", icon: Icon2 },
-    { id: 4, title: "Terapiya uchun qabulga yozilish", icon: Icon3 },
+    { id: 1, title: "Labaratoriya uchun qabulga yozilish", icon: <FaFlask /> },
+    { id: 2, title: "Pediatriya uchun qabulga yozilish", icon: <FaUserMd /> },
+    { id: 3, title: "Diagnostika uchun qabulga yozilish", icon: <FaStethoscope /> },
+    { id: 4, title: "Terapiya uchun qabulga yozilish", icon: <FaClinicMedical /> },
   ];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {services.map((service) => (
+      {services.map((service, index) => (
         <div
           key={service.id}
-          className="flex flex-row jjustify-start items-center bg-white p-6 rounded-2xl shadow hover:shadow-xl transition-shadow"
+          className={`flex flex-row justify-start items-center p-6 rounded-2xl shadow hover:shadow-xl transition-shadow 
+            ${index % 2 === 0
+              ? "bg-[#319a95] text-white" // Even button: background color #0d726d, text white
+              : "bg-white text-[#319a95]" // Odd button: background white, text #0d726d
+            } 
+            sm:text-[#0d726d] sm:bg-white sm:hover:bg-[#0d726d] sm:hover:text-white`} // For smaller screens (below 768px)
         >
-          <img src={service.icon} alt={service.title} className="w-7 max-md:w-10 h-7 max-md:h-10 mx-2" />
-          <p className="text-left text-xl md:text-lg text-gray-800 font-medium">{service.title}</p>
+          <div className="text-2xl md:text-3xl mr-4">
+            {React.cloneElement(service.icon, { className: "text-inherit" })}
+          </div>
+          <p className="text-left text-xl md:text-lg font-medium">
+            {service.title}
+          </p>
         </div>
       ))}
     </div>
