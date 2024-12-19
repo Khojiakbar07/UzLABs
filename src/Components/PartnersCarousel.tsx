@@ -32,7 +32,7 @@ const PartnersCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: false, // Disable center mode to remove extra padding
+    centerMode: false,
     arrows: false,
     responsive: [
       {

@@ -1,14 +1,18 @@
 import { useState } from "react";
+import { Button } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+import Sidebar from "./SidebarProps";
 import logo from "../assets/logo.jpg";
-import { FaPhoneAlt } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
 import UzFlag from "../assets/uzb.png";
-import RuFlag from "../assets/ru.png";
+import RuFlag from "../assets/ru.png";  
 import EnFlag from "../assets/en.png";
+import { useTranslation } from "react-i18next";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const languages = [
     { code: "uz", label: "Uz", flag: UzFlag },
@@ -27,18 +31,27 @@ function Navbar() {
     languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   return (
-    <div className="bg-white shadow-md sticky top-0 z-50 w-full">
+    <div className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="w-full max-w-screen-2xl mx-auto flex justify-between items-center py-4 px-4 md:px-6 lg:px-10">
-        {/* Logo Section */}
+        {/* Menu */}
+        <div className="md:hidden">
+          <Button
+            type="text"
+            icon={<MenuOutlined />}
+            onClick={() => setIsSidebarOpen(true)}
+          />
+        </div>
+
+        {/* Logo */}
         <div className="flex items-center space-x-4">
-          <img src={logo} alt="Logo" className="h-8 md:h-10" />
+          <img src={logo} alt="Logo" className="h-8 md:h-10 mx-auto" />
           <span className="text-sm md:text-lg font-normal leading-tight">
             Uzlab.uz
           </span>
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center space-x-4 md:space-x-4">
+        <div className="flex items-center space-x-4">
           {/* Language Dropdown */}
           <div className="relative">
             <button
@@ -83,7 +96,6 @@ function Navbar() {
               </div>
             )}
           </div>
-
           {/* Call Center Info */}
           <div className="hidden md:flex flex-col items-end">
             <span className="text-sm font-medium">{t("call_center")}</span>
@@ -94,12 +106,15 @@ function Navbar() {
           </div>
 
           {/* Call Button */}
-          <button className="flex items-center space-x-1 bg-[#17776a] hover:bg-[#115c52] text-white font-medium text-sm py-1 px-4 rounded-lg">
+          <button className="hidden md:flex items-center space-x-1 bg-[#17776a] hover:bg-[#115c52] text-white font-medium text-sm py-1 px-4 rounded-lg">
             <FaPhoneAlt className="h-4 w-4" />
             <span>1195</span>
           </button>
         </div>
       </div>
+
+      {/* Sidebar Component */}
+      <Sidebar isVisible={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
     </div>
   );
 }
