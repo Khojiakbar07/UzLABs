@@ -12,7 +12,7 @@ function Footer() {
             alt="Logo"
             className="h-8 md:h-10"
           />
-          <span className="text-sm md:text-lg font-normal leading-tight hidden sm:block">
+          <span className="text-sm md:text-lg font-normal leading-tight">
             Uzlab.uz
           </span>
         </div>

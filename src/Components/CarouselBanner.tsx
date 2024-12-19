@@ -61,13 +61,16 @@ const CarouselBanner = () => {
         {carouselData.map((slide) => (
           <div key={slide.id}>
             <div className="relative h-[625px] w-full overflow-hidden">
+              {/* Image */}
               <img
                 src={slide.img}
                 alt={slide.title}
                 className="w-full h-full object-cover"
               />
-              {/* Gradient Overlay with content */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-black via-transparent to-transparent p-8 text-center">
+              
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+              {/* Content */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
                 <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
                   {slide.title}
                 </h1>
@@ -77,7 +80,6 @@ const CarouselBanner = () => {
                 <p className="text-sm md:text-base text-gray-300 mb-4 md:hidden">
                   {slide.description}
                 </p>
-                {/* Add button */}
                 <button className="py-2 px-6 bg-[#17776a] text-white text-lg font-bold rounded-lg hover:bg-[#145d4d]">
                   Batafsil
                 </button>
