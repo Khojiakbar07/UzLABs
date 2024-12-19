@@ -60,7 +60,7 @@ const CarouselBanner = () => {
       <Carousel afterChange={onChange} autoplay dotPosition="bottom">
         {carouselData.map((slide) => (
           <div key={slide.id}>
-            <div className="relative h-[625px] w-full overflow-hidden">
+            <div className="relative h-[695px] w-full overflow-hidden">
               {/* Image */}
               <img
                 src={slide.img}
