@@ -28,13 +28,12 @@ const PartnersCarousel = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, 
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
-    centerPadding: "40px",
-    arrows: false, 
+    centerMode: false, // Disable center mode to remove extra padding
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -54,7 +53,6 @@ const PartnersCarousel = () => {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          centerMode: false,
           arrows: false,
         },
       },
