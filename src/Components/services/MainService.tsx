@@ -2,10 +2,10 @@ import Icon from "../../assets/Icons/inspector1.svg"
 import Icon1 from "../../assets/Icons/dxx.svg"
 import Icon2 from "../../assets/Icons/digo_off.svg"
 import Icon3 from "../../assets/Icons/online_check.svg"
-import Icon4 from "../../assets/Icons/Lab.png"
-import Icon5 from "../../assets/Icons/diagnostic.png"
-import Icon6 from "../../assets/Icons/icons8-health-checkup-96.png"
-import Icon7 from "../../assets/Icons/therapy.png"
+import Icon4 from "../../assets/Icons/laboratory.png"
+import Icon5 from "../../assets/Icons/diagnostics.png"
+import Icon6 from "../../assets/Icons/health-checkup.png"
+import Icon7 from "../../assets/SideBar-Icons/therapy.png"
 
 const AsosiyServices = () => {
   const services = [
@@ -27,7 +27,7 @@ const AsosiyServices = () => {
           key={service.id}
           className="flex flex-row justify-start items-center bg-white p-6 md:p-4 rounded-2xl shadow hover:shadow-xl transition-shadow"
         >
-          <img src={service.icon} alt={service.title} className="w-7 h-7 mx-2" />
+          <img src={service.icon} alt={service.title} className="w-7 max-md:w-10 h-7 max-md:h-10 mx-2" />
           <p className="text-left text-xl md:text-lg text-gray-800 font-medium">{service.title}</p>
         </div>
       ))}
