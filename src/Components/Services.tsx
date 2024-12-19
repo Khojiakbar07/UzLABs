@@ -41,7 +41,7 @@ const Services = () => {
     </div>
 
     {/* Cards Section */}
-    <div className="bg-gray-50 py-4 mt-6 rounded-lg shadow-md">
+    <div className="bg-[#eaf3f6] py-4 mt-6 rounded-lg shadow-md">
       <div className="px-4 sm:px-8">
         {activeTab === "asosiy" && <MainService />}
         {activeTab === "qabul" && <AdmissionService />}
