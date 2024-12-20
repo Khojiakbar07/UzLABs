@@ -18,7 +18,7 @@ function BottomNavBar() {
         </div>
 
         {/* Home */}
-        <div className="flex flex-col items-center text-gray-700 hover:text-[#115c52]">
+        <div className="flex flex-col items-center text-[#115c52]">
           <FaHome className="text-xl" />
           <span className="text-xs mt-1">Asosiy</span>
         </div>

@@ -46,7 +46,7 @@ function Navbar() {
         <div className="flex items-center space-x-4">
           <img src={logo} alt="Logo" className="h-8 md:h-10 mx-auto" />
           <span className="text-sm md:text-lg font-normal leading-tight">
-            Uzlab.uz
+            Uzlabs.uz
           </span>
         </div>
 

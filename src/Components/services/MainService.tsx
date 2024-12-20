@@ -16,15 +16,11 @@ const MainServices = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      {services.map((service , index) => (
+      {services.map((service) => (
         <div
         key={service.id}
         className={`flex flex-row justify-start items-center p-6 rounded-2xl shadow hover:shadow-xl transition-shadow 
-          ${index % 2 === 0
-            ? "bg-[#319a95] text-white" // Even button: background color #0d726d, text white
-            : "bg-white text-[#319a95]" // Odd button: background white, text #0d726d
-          } 
-          sm:text-[#0d726d] sm:bg-white sm:hover:bg-[#0d726d] sm:hover:text-white`} // For smaller screens (below 768px)
+          text-[#0d726d] bg-white hover:bg-[#0d726d] hover:text-white`}
       >
           <div className="text-2xl md:text-3xl mr-4">
             {React.cloneElement(service.icon, { className: "text-inherit" })}
