@@ -26,8 +26,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       <div className="flex items-center justify-between p-4 border-b">
         <div className="flex items-center space-x-3">
           <img src={logo} alt="Logo" className="h-10" />
-          <span className="text-lg font-semibold">
-            Uzlabs
+          <span className="text-lg font-normal">
+            Uzlabs.uz
           </span>
         </div>
         <button onClick={onClose} className="text-gray-600 hover:text-gray-900">
