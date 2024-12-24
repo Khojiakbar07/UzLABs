@@ -51,13 +51,9 @@ const carouselData = [
 ];
 
 const CarouselBanner = () => {
-  const onChange = (currentSlide: number) => {
-    console.log(`Current Slide: ${currentSlide}`);
-  };
-
   return (
     <div className="relative w-full">
-      <Carousel afterChange={onChange} autoplay dotPosition="bottom">
+      <Carousel autoplay dotPosition="bottom">
         {carouselData.map((slide) => (
           <div key={slide.id}>
             <div className="relative h-[695px] w-full overflow-hidden">

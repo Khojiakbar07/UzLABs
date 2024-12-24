@@ -11,7 +11,7 @@ const MainServices = () => {
     { id: 6, title: "Diagnostika natijalarini ko‘rish", icon: <FaDiagnostics /> },
     { id: 7, title: "Pediatriya va Terapiya xizmatlaridan foydalanish", icon: <FaHeartbeat /> },
     { id: 8, title: "Onkologiya va Radiologik tekshiruvlar", icon: <FaRadiation /> },
-    { id: 9, title: "Diagnostik materiallariga natijasini onlayn tekshirish", icon: <FaStethoscope /> },
+    { id: 9, title: "Diagnostik natijasini onlayn tekshirish", icon: <FaStethoscope /> },
   ];
 
   return (
