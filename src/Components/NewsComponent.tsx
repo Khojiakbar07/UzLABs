@@ -1,6 +1,6 @@
-import Image from "../assets/News/Image.jpg";
-import Image2 from "../assets/News/image2.jpg";
-import Image3 from "../assets/News/image3.jpg";
+// import Image from "../assets/News/Image.jpg";
+// import Image2 from "../assets/News/image2.jpg";
+// import Image3 from "../../src/assets/News/Image3.jpg";
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import Slider from "react-slick";
@@ -27,7 +27,7 @@ const NewsComponent: React.FC = () => {
       title: "Saida Mirziyoyeva Respublika ixtisoslashtirilgan ona va bola salomatligi markazi xodimlarini tabrikladi",
       description:
         "Prezident yordamchisining ma’lum qilishicha, yangi davlat dasturi doirasida ayollarni skrining tekshiruvidan o‘tkazish va qo‘llab-quvvatlash tizimi takomillashtiriladi.",
-      image: Image,
+      image: "https://via.placeholder.com/400x250",
       url: "#",
       date: "2024-12-23",
     },
@@ -36,7 +36,7 @@ const NewsComponent: React.FC = () => {
       title: "Tibbiyot muassasasiga hisobga qo‘yishda davlat xizmatini ko‘rsatish reglamenti tasdiqlandi",
       description:
         "Vazirlar Mahkamasining “Jismoniy shaxslarni davlat tibbiyot muassasalariga hisobga qo‘yish bo‘yicha davlat xizmatini ko‘rsatishning ma’muriy reglamentini tasdiqlash to‘g‘risida”gi qarori qabul qilindi.",
-      image: Image2,
+      image:"https://via.placeholder.com/400x250",
       url: "#",
       date: "2024-12-22",
     },
@@ -45,7 +45,7 @@ const NewsComponent: React.FC = () => {
       title: "O‘zbekistonning tibbiy va sog‘lomlashtirish turizmi brendi ishlab chiqiladi",
       description:
         "“Avitsenna” nomi ostida O‘zbekistonning tibbiy va sog‘lomlashtirish turizmi brendi ishlab chiqiladi.",
-      image: Image3,
+      image: "https://via.placeholder.com/400x250",
       url: "#",
       date: "2024-12-20",
     },
