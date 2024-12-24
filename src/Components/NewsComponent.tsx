@@ -1,6 +1,6 @@
 // import Image from "../assets/News/Image.jpg";
 // import Image2 from "../assets/News/image2.jpg";
-// import Image3 from "../../src/assets/News/Image3.jpg";
+import Image3 from "../../src/assets/News/Image3.jpg";
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import Slider from "react-slick";
@@ -45,7 +45,7 @@ const NewsComponent: React.FC = () => {
       title: "O‘zbekistonning tibbiy va sog‘lomlashtirish turizmi brendi ishlab chiqiladi",
       description:
         "“Avitsenna” nomi ostida O‘zbekistonning tibbiy va sog‘lomlashtirish turizmi brendi ishlab chiqiladi.",
-      image: "https://via.placeholder.com/400x250",
+      image: Image3,
       url: "#",
       date: "2024-12-20",
     },
