@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Components/Footer";
 import BottomNavBar from "./Components/BottomNavBar";
+import Home from "./Components/home/Home";
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -12,7 +13,7 @@ function App() {
       {/* Main Content */}
       <main>
         <Outlet/>
-        {/* <Home/>  */}
+        <Home/> 
       </main>
        <Footer/>
       <BottomNavBar/>
