@@ -7,6 +7,7 @@ import services from "../assets/SideBar-Icons/services.png"
 import Therapy from "../assets/SideBar-Icons/therapy.png"
 // import { BsList } from "react-icons/bs";
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
 
 
@@ -37,10 +38,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
 
       {/* Menu Items */}
       <ul className="p-4 space-y-4">
-        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 p-2 rounded-lg">
+        <Link to="/profile" className="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 p-2 rounded-lg">
           <img src={person} className="h-5 w-5 text-gray-600" />
           <span className="text-sm font-medium">Profilga kirish</span>
-        </li>
+        </Link>
         <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 p-2 rounded-lg">
           <img src={lab} className="h-5 w-5 text-gray-600" />
           <span className="text-sm font-medium">Diagnostika</span>

@@ -57,7 +57,7 @@ const CarouselBanner = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Adjust loading time here if needed
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
