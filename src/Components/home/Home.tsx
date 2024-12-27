@@ -11,14 +11,14 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 2500);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <main>
       {loading ? (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="fixed inset-0 flex justify-center items-center bg-white/50 backdrop-blur-sm z-50">
           <l-cardio
             size="250"
             stroke="5"
