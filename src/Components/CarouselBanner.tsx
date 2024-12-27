@@ -1,4 +1,5 @@
 import { Carousel } from "antd";
+import { useState, useEffect } from "react";
 
 // Import your images
 import image1 from "../assets/Banner/image2.jpg";
@@ -51,39 +52,59 @@ const carouselData = [
 ];
 
 const CarouselBanner = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative w-full">
-      <Carousel autoplay dotPosition="bottom">
-        {carouselData.map((slide) => (
-          <div key={slide.id}>
-            <div className="relative h-[695px] w-full overflow-hidden">
-              {/* Image */}
-              <img
-                src={slide.img}
-                alt={slide.title}
-                className="w-full h-full object-cover"
-              />
-              
-              <div className="absolute inset-0 bg-black opacity-50"></div>
-              {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
-                <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
-                  {slide.title}
-                </h1>
-                <h2 className="text-lg md:text-2xl text-white mb-4">
-                  {slide.subtitle}
-                </h2>
-                <p className="text-sm md:text-base text-gray-300 mb-4 md:hidden">
-                  {slide.description}
-                </p>
-                <button className="py-2 px-6 bg-[#17776a] text-white text-lg font-bold rounded-lg hover:bg-[#145d4d]">
-                  Batafsil
-                </button>
+      {loading ? (
+        <div className="flex justify-center items-center h-[695px]">
+          <l-cardio
+            size="250"
+            stroke="5"
+            speed="2"
+            color="#17776a"
+          ></l-cardio>
+        </div>
+      ) : (
+        <Carousel autoplay dotPosition="bottom">
+          {carouselData.map((slide) => (
+            <div key={slide.id}>
+              <div className="relative h-[695px] w-full overflow-hidden">
+                {/* Image */}
+                <img
+                  src={slide.img}
+                  alt={slide.title}
+                  className="w-full h-full object-cover"
+                />
+
+                <div className="absolute inset-0 bg-black opacity-50"></div>
+                {/* Content */}
+                <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
+                  <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">
+                    {slide.title}
+                  </h1>
+                  <h2 className="text-lg md:text-2xl text-white mb-4">
+                    {slide.subtitle}
+                  </h2>
+                  <p className="text-sm md:text-base text-gray-300 mb-4 md:hidden">
+                    {slide.description}
+                  </p>
+                  <button className="py-2 px-6 bg-[#17776a] text-white text-lg font-bold rounded-lg hover:bg-[#145d4d]">
+                    Batafsil
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
+          ))}
+        </Carousel>
+      )}
     </div>
   );
 };

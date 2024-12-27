@@ -1,31 +1,54 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
-import Services from "./Components/Services";
 import Footer from "./Components/Footer";
-import PartnersCarousel from "./Components/PartnersCarousel";
-import CarouselBanner from "./Components/CarouselBanner";
 import BottomNavBar from "./Components/BottomNavBar";
-import NewsComponent from "./Components/NewsComponent";
-
+import Home from "./Components/home/Home";
+import NotFound from "./Components/not-found/NotFound";
+import Profile from "./Components/profile/Profile";
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
       {/* Main Content */}
       <main>
-        <CarouselBanner/>
-        <About/>
-        <NewsComponent/>
-        <Services/>
-        <PartnersCarousel/>
-        <Footer/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile/>} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
       </main>
+      <Footer/>
       <BottomNavBar/>
-    </div>
+    </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+// const App: React.FC = () => {
+//   return (
+//     <Router>
+//       <div className="bg-gray-100 min-h-screen">
+
+
+//         {/* Main Content */}
+//         <div className="container mx-auto py-8 px-4">
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="*" element={<NotFound />} />
+//           </Routes>
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// };
+
+// export default App;
+

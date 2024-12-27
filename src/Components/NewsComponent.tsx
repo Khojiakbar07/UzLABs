@@ -4,9 +4,9 @@ import Image3 from "../../src/assets/News/Image3.jpg";
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "ldrs"
 
 interface NewsArticle {
   id: number;
@@ -16,6 +16,7 @@ interface NewsArticle {
   url: string;
   date: string;
 }
+
 
 const NewsComponent: React.FC = () => {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
@@ -55,7 +56,7 @@ const NewsComponent: React.FC = () => {
     setTimeout(() => {
       setArticles(mockData);
       setLoading(false);
-    }, 500);
+    }, 1500);
   }, []);
 
   const sliderSettings = {
@@ -88,8 +89,13 @@ const NewsComponent: React.FC = () => {
           Yangiliklar
         </h1>
         {loading ? (
-          <div className="text-center font-bold text-[#222020]">
-            Yangiliklar yengilanmoqda
+          <div className="flex text-center py-10 justify-center">
+            <l-cardio
+              size="250"
+              stroke="4"
+              speed="2"
+              color="#17776a" 
+            ></l-cardio>
           </div>
         ) : (
           <Slider {...sliderSettings}>

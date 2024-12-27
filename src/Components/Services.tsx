@@ -55,8 +55,10 @@ const Services = () => {
       <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-6">
         {/* Text Section */}
         <div className="text-center sm:text-left">
-          <h1 className="text-xl sm:text-2xl font-semibold mb-2">
-            UZLABs - barchasi o'z qo'lingizda!
+          <h1 className="text-[#000] text-xl sm:text-2xl font-semibold mb-2">
+            <span className="text-[#17776a] text-xl sm:text-2xl font-semibold mb-2">
+              UZLABs
+            </span> - barchasi o'z qo'lingizda!
           </h1>
           <p className="text-gray-700 text-sm sm:text-base mb-4">
             Mobil ilovani yuklab olish uchun Google Play yoki App Store-ga quyidagi tugma orqali
