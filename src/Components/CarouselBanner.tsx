@@ -10,7 +10,7 @@ import image5 from "../assets/Banner/image5.jpg";
 const carouselData = [
   {
     id: 1,
-    title: "Uzlabs klinikasi",
+    title: "Uzlabs.uz klinikasi",
     subtitle: "Yuqori sifatli diagnostika va sog'liqni saqlash xizmatlari",
     description:
       "Eng so'nggi texnologiyalar va tibbiy bilimlar asosida yuqori sifatli diagnostika va sog'liqni saqlash xizmatlarini taqdim etadi.",
@@ -29,7 +29,7 @@ const carouselData = [
     title: "Sizning farovonligingiz bizning ustuvorligimiz!",
     subtitle: "Sog'liqni saqlashdagi eng so'nggi yutuqlar",
     description:
-      "Uzlabs klinikasida so'nggi tibbiy texnologiyalar yordamida sog'liqni saqlash va diagnostika xizmatlarini taqdim etamiz.",
+      "Uzlabs.uz klinikasida so'nggi tibbiy texnologiyalar yordamida sog'liqni saqlash va diagnostika xizmatlarini taqdim etamiz.",
     img: image3,
   },
   {
@@ -37,7 +37,7 @@ const carouselData = [
     title: "Sizning farovonligingiz bizning ustuvorligimiz!",
     subtitle: "Sog'liqni saqlashdagi eng so'nggi yutuqlar",
     description:
-      "Uzlabs klinikasida so'nggi tibbiy texnologiyalar yordamida sog'liqni saqlash va diagnostika xizmatlarini taqdim etamiz.",
+      "Uzlabs.uz klinikasida so'nggi tibbiy texnologiyalar yordamida sog'liqni saqlash va diagnostika xizmatlarini taqdim etamiz.",
     img: image4,
   },
   {

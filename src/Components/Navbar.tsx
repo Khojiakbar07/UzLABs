@@ -5,9 +5,10 @@ import Sidebar from "./SidebarProps";
 import logo from "../assets/logo.jpg";
 import UzFlag from "../assets/uzb.png";
 import RuFlag from "../assets/ru.png";  
-import EnFlag from "../assets/en.png";
+
 import { useTranslation } from "react-i18next";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
@@ -17,7 +18,6 @@ function Navbar() {
   const languages = [
     { code: "uz", label: "Uz", flag: UzFlag },
     { code: "ru", label: "Ru", flag: RuFlag },
-    { code: "en", label: "En", flag: EnFlag },
   ];
 
   const handleLanguageChange = (languageCode: string) => {
@@ -45,9 +45,9 @@ function Navbar() {
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <img src={logo} alt="Logo" className="h-8 md:h-10 mx-auto" />
-          <span className="text-sm md:text-lg font-normal leading-tight">
+          <Link to="/" className="text-sm md:text-lg font-normal leading-tight">
             Uzlabs.uz
-          </span>
+          </Link>
         </div>
 
         {/* Right Section */}
@@ -108,7 +108,7 @@ function Navbar() {
           {/* Call Button */}
           <button className="hidden md:flex items-center space-x-1 bg-[#17776a] hover:bg-[#115c52] text-white font-medium text-sm py-1 px-4 rounded-lg">
             <FaPhoneAlt className="h-4 w-4" />
-            <span>1195</span>
+            <span>103</span>
           </button>
         </div>
       </div>

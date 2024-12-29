@@ -1,26 +1,38 @@
 import Slider from "react-slick";
-import Oxford from "../assets/Icons/oxford.jpg";
-import Scantron from "../assets/Icons/scantron.jpg";
-import ALTE from "../assets/Icons/alte.png";
-import Cambridge from "../assets/Icons/cambr.png";
-import TOEFL from "../assets/Icons/itp.png";
-import OSYM from "../assets/Icons/osym.png";
-import CITO from "../assets/Icons/cito.png";
-import GRE from "../assets/Icons/gre.jpg";
-import AZER from "../assets/Icons/azer.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Aloka from "../assets/Partners/Aloka.jpg";
+import BioRad from "../assets/Partners/biorad1.png";
+import CerTest from "../assets/Partners/CerTest.png";
+import Chengda from "../assets/Partners/Chengda.jpg";
+import Glaxosmithkline from "../assets/Partners/glaxosmithkline.svg";
+import Haier from "../assets/Partners/Haier2.jpg";
+import Hitachi from "../assets/Partners/Hitachi.png";
+import InterLabService from "../assets/Partners/InterLabService.jpg";
+import Qiagen from "../assets/Partners/Qiagen.png";
+import Roche from "../assets/Partners/roche.webp";
+import Sanofi from "../assets/Partners/Sanofi-Logo.png";
+import Serum from "../assets/Partners/Serumi.png";
+import Siemens from "../assets/Partners/siemense.png";
+import Sysmex from "../assets/Partners/Sysmex_company.png";
+import Wantai from "../assets/Partners/Wantai.png";
 
 const partners = [
-  { id: 1, logo: Oxford, name: "Oxford" },
-  { id: 2, logo: Scantron, name: "Scantron" },
-  { id: 3, logo: ALTE, name: "ALTE" },
-  { id: 4, logo: Cambridge, name: "Cambridge Assessment" },
-  { id: 5, logo: TOEFL, name: "TOEFL ITP" },
-  { id: 6, logo: OSYM, name: "OSYM" },
-  { id: 7, logo: CITO, name: "CITO" },
-  { id: 8, logo: GRE, name: "GRE" },
-  { id: 8, logo: AZER, name: "AZER" },
+  { id: 1, logo: Aloka, name: "Aloka" },
+  { id: 2, logo: BioRad, name: "BioRad" },
+  { id: 3, logo: CerTest, name: "CerTest" },
+  { id: 4, logo: Chengda, name: "Chengda" },
+  { id: 5, logo: Glaxosmithkline, name: "Glaxosmithkline" },
+  { id: 6, logo: Haier, name: "Haier" },
+  { id: 7, logo: Hitachi, name: "Hitachi" },
+  { id: 8, logo: InterLabService, name: "InterLabService" },
+  { id: 9, logo: Qiagen, name: "Qiagen" },
+  { id: 10, logo: Roche, name: "Roche" },
+  { id: 11, logo: Sanofi, name: "Sanofi" },
+  { id: 12, logo: Serum, name: "Serum" },
+  { id: 13, logo: Siemens, name: "Siemens" },
+  { id: 14, logo: Sysmex, name: "Sysmex" },
+  { id: 15, logo: Wantai, name: "Wantai" },
 ];
 
 const PartnersCarousel = () => {

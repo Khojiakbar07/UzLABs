@@ -5,6 +5,8 @@ import BottomNavBar from "./Components/BottomNavBar";
 import Home from "./Components/home/Home";
 import NotFound from "./Components/not-found/NotFound";
 import Profile from "./Components/profile/Profile";
+import Login from "./Components/auth/Login";
+import Register from "./Components/auth/Register";
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -17,6 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       </main>

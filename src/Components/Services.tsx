@@ -11,7 +11,7 @@ const tabs = [
   { id: "asosiy", label: "Asosiy" },
   { id: "qabul", label: "Qabul uchun" },
   { id: "natija", label: "Natijani ko'rish" },
-  { id: "konsultatsiya", label: "konsultatsiya" },
+  { id: "konsultatsiya", label: "Konsultasiya" },
 ];
 
 const Services = () => {
@@ -57,7 +57,7 @@ const Services = () => {
         <div className="text-center sm:text-left">
           <h1 className="text-[#000] text-xl sm:text-2xl font-semibold mb-2">
             <span className="text-[#17776a] text-xl sm:text-2xl font-semibold mb-2">
-              UZLABs
+              Uzlabs.uz
             </span> - barchasi o'z qo'lingizda!
           </h1>
           <p className="text-gray-700 text-sm sm:text-base mb-4">
