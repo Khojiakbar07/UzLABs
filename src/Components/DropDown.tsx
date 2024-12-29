@@ -11,7 +11,6 @@ const DropDown = () => {
     <Menu onClick={handleMenuClick}>
       <Menu.Item key="uz">Uzbek</Menu.Item>
       <Menu.Item key="ru">Russian</Menu.Item>
-      <Menu.Item key="en">English</Menu.Item>
     </Menu>
   );
 

@@ -2,23 +2,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Poster from "../assets/Icons/poster.svg";
 import AboutCarousel from "./AboutCarousel";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <section className="py-8 md:py-12 bg-[#f8f8fa]">
+    <section className="py-4 md:py-8 bg-[#f8f8fa]">
       {/* Header Section */}
       <header className="bg-white rounded-xl shadow-lg border border-white px-6 md:px-12 py-8 md:py-12 flex flex-col items-start max-w-screen-xl mx-auto">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-left leading-snug">
-          Uzlabs klinikasi – Eng so'nggi texnologiyalar va tibbiy bilimlar asosida
+          Uzlabs.uz klinikasi – Eng so'nggi texnologiyalar va tibbiy bilimlar asosida
           yuqori sifatli diagnostika va sog'liqni saqlash xizmatlarini taqdim etadi.
         </h1>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <button className="bg-[#17776a] font-medium border border-[#17776a] text-white px-6 py-2 rounded-xl hover:bg-[#115c52] transition-colors">
+          <Link to="/login" className="bg-[#17776a] font-medium border border-[#17776a] text-white px-6 py-2 rounded-xl hover:bg-[#115c52] transition-colors">
             Kirish
-          </button>
-          <button className="bg-white font-medium border border-[#17776a] text-[#17776a] px-6 py-2 rounded-xl hover:bg-[#115c52] hover:text-white transition-colors">
+          </Link>
+          <Link to="/register" className="bg-white font-medium border border-[#17776a] text-[#17776a] px-6 py-2 rounded-xl hover:bg-[#115c52] hover:text-white transition-colors">
             Ro'yxatdan o'tish
-          </button>
+          </Link>
         </div>
       </header>
 

@@ -31,7 +31,7 @@ function Footer() {
           {/* Call Button */}
           <button className="flex items-center width-full space-x-1 bg-[#17776a] hover:bg-[#115c52] text-white font-medium text-sm py-1 px-2 md:py-2 md:px-4 rounded-lg">
             <FaPhoneAlt className="h-4 w-4" />
-            <span className="">1195</span>
+            <span className="">103</span>
           </button>
         </div>
       </div>
