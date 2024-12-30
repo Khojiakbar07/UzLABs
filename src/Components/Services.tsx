@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PlayMarket from "../assets/Icons/play_market.svg";
 import AppStore from "../assets/Icons/app_store.svg";
-import QRCode from "../assets/qr-code.svg";
+import QRCode from "../assets/QRCode.png";
 import MainService from "./services/MainService";
 import AdmissionService from "./services/AdmissionService";
 import PermitService from "./services/PermitService";
