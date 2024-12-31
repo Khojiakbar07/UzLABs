@@ -3,25 +3,40 @@ import "slick-carousel/slick/slick-theme.css";
 import Poster from "../assets/Icons/poster.svg";
 import AboutCarousel from "./AboutCarousel";
 import { Link } from "react-router-dom";
+import AboutBanner from "../assets/Banner/AboutBanner.png"
 
 function About() {
   return (
     <section className="py-4 md:py-8 bg-[#f8f8fa]">
       {/* Header Section */}
-      <header className="bg-white rounded-xl shadow-lg border border-white px-6 md:px-12 py-8 md:py-12 flex flex-col items-start max-w-screen-xl mx-auto">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-left leading-snug">
-          Uzlabs.uz klinikasi – Eng so'nggi texnologiyalar va tibbiy bilimlar asosida
-          yuqori sifatli diagnostika va sog'liqni saqlash xizmatlarini taqdim etadi.
-        </h1>
-        <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <Link to="/login" className="bg-[#17776a] font-medium border border-[#17776a] text-white px-6 py-2 rounded-xl hover:bg-[#115c52] transition-colors">
-            Kirish
-          </Link>
-          <Link to="/register" className="bg-white font-medium border border-[#17776a] text-[#17776a] px-6 py-2 rounded-xl hover:bg-[#115c52] hover:text-white transition-colors">
-            Ro'yxatdan o'tish
-          </Link>
+      <div className="flex justify-center items-center p-8 font-sans">
+      <div className="flex items-center max-w-6xl w-full gap-10 lg:flex-row flex-col">
+        <div className="flex-1 flex justify-center items-center">
+          <img src={AboutBanner} alt="Phone with Portal" className="max-w-full h-auto"/>
         </div>
-      </header>
+        <div className="flex-1">
+          <h1 className="text-3xl font-bold mb-4">
+            Uzlabs.uz klinikasi haqida
+          </h1>
+          <p className="mb-4">
+          Uzlabs.uz klinikasi – Toshkent shahrida joylashgan zamonaviy tibbiyot markazi bo'lib, 
+          yuqori sifatli diagnostika va sog'liqni saqlash xizmatlarini taqdim etadi.
+          Klinika eng so'nggi texnologiyalar va tibbiy bilimlar asosida ishlaydi,
+          bu esa bemorlarga ishonchli va samarali davolanish imkonini beradi.
+          Agar sizga qo'shimcha ma'lumot kerak bo'lsa yoki klinika xizmatlaridan foydalanmoqchi bo'lsangiz,
+          aloqa ma'lumotlari orqali bog'lanishingiz mumkin.
+          </p>
+          <div className="flex gap-4 mt-4">
+            <Link to="/login" className="bg-[#17776a] font-medium border border-[#17776a] text-white px-6 py-2 rounded-xl hover:bg-[#115c52] transition-colors">
+              Kirish
+            </Link>
+            <Link to="/register" className="bg-white font-medium border border-[#17776a] text-[#17776a] px-6 py-2 rounded-xl hover:bg-[#115c52] hover:text-white transition-colors">
+              Ro'yxatdan o'tish
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
 
       {/* Poster Section */}
       <div className="bg-[#eaf3f6] p-6 md:p-8 rounded-xl shadow-sm border border-[#d3e4eb] max-w-screen-xl mx-auto my-6 md:my-10">
