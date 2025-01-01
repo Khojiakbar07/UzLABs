@@ -3,9 +3,9 @@ import { FaCalendarAlt } from "react-icons/fa";
 import Image from "../../assets/News/Image.jpg";
 import Image2 from "../../assets/News/Image2.jpg";
 import Image3 from "../../assets/News/Image3.jpg";
-import Image4 from "../../assets/News/Image4.jpg"
-import Image5 from "../../assets/News/Image5.jpg"
-import Image6 from "../../assets/News/Image6.jpg"
+import Image4 from "../../assets/News/Image4.jpg";
+import Image5 from "../../assets/News/Image5.jpg";
+import Image6 from "../../assets/News/Image6.jpg";
 
 interface NewsArticle {
   id: number;
