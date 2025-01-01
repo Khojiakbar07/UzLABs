@@ -61,7 +61,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
         <div className="flex justify-between items-center">
           <button className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg">
             <FaPhoneAlt className="h-5 w-5" />
-            <span className="font-medium">1195</span>
+            <span className="font-medium">103</span>
           </button>
           <div className="flex flex-col items-end">
             <span className="text-sm font-medium">Call center</span>
