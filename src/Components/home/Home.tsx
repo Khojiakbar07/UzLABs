@@ -4,6 +4,7 @@ import Services from "../Services";
 import PartnersCarousel from "../PartnersCarousel";
 import CarouselBanner from "../CarouselBanner";
 import NewsComponent from "../NewsComponent";
+import Contact from "../services/contact-us/contact";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ const Home = () => {
           <NewsComponent />
           <Services />
           <PartnersCarousel />
+          <Contact/>
         </>
       )}
     </main>
