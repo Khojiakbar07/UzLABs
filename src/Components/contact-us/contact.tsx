@@ -1,5 +1,5 @@
 import React from "react";
-import People from "../../../assets/people.webp";
+import People from "../../assets/people.webp";
 
 const ContactSection: React.FC = () => {
   return (
