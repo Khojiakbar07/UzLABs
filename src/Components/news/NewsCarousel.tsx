@@ -1,5 +1,5 @@
 import Image from "../../../src/assets/News/Image.jpg";
-import Image2 from "../../../src/assets/News/image2.jpg";
+import Image2 from "../../../src/assets/News/Image3.jpg";
 import Image3 from "../../../src/assets/News/Image3.jpg";
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
