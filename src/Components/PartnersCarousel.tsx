@@ -73,7 +73,7 @@ const PartnersCarousel = () => {
   
 
   return (
-    <div className="bg-[#f8f8fa] py-8 mb-0 sm:mb-24">
+    <div className="bg-[#f8f8fa] py-8">
       <h2 className=" text-[#76818f] text-2xl font-semibold text-center mb-6">
         Hamkor tashkilotlar
       </h2>

@@ -33,8 +33,8 @@ const Home = () => {
           <About />
           <NewsComponent />
           <Services />
-          <PartnersCarousel />
           <Contact/>
+          <PartnersCarousel />
         </>
       )}
     </main>
