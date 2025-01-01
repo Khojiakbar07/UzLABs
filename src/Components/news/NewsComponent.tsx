@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
-import Image from "../../../src/assets/News/Image.jpg";
-import Image2 from "../../../src/assets/News/Image2.jpg";
-import Image3 from "../../../src/assets/News/Image3.jpg";
-import Image4 from "../../../src/assets/News/Image4.jpg"
+import Image from "../../assets/News/Image.jpg";
+import Image2 from "../../assets/News/Image2.jpg";
+import Image3 from "../../assets/News/Image3.jpg";
+import Image4 from "../../assets/News/Image4.jpg"
 import Image5 from "../../assets/News/Image5.jpg"
 import Image6 from "../../assets/News/Image6.jpg"
 
