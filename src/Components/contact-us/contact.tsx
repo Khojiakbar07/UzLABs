@@ -15,10 +15,10 @@ const ContactSection: React.FC = () => {
       <div className="w-full lg:w-1/2 text-center lg:text-left p-8 z-0">
         <h2 className="text-3xl font-bold mb-4">Aloqa Xizmatlari</h2>
         <p className="mb-6 text-lg">
-          Savollaringiz va qandaydir taklifingiz bo'lsa biz bilan bog'laning
+          Savollaringiz va qandaydir taklifingiz bo'lsa biz bilan 
         </p>
         <button className="bg-white font-medium border border-[#17776a] text-[#17776a] px-6 py-3 rounded-2xl text-center">
-          Contact Us
+          Bog’laning →
         </button>
       </div>
     </div>

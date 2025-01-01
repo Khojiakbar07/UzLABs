@@ -1,6 +1,6 @@
-import Image from "../../src/assets/News/Image.jpg";
-import Image2 from "../../src/assets/News/image2.jpg";
-import Image3 from "../../src/assets/News/Image3.jpg";
+import Image from "../../../src/assets/News/Image.jpg";
+import Image2 from "../../../src/assets/News/image2.jpg";
+import Image3 from "../../../src/assets/News/Image3.jpg";
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import Slider from "react-slick";
@@ -13,12 +13,12 @@ interface NewsArticle {
   title: string;
   description: string;
   image: string;
-  url: string;
+  url: string;  
   date: string;
 }
 
 
-const NewsComponent: React.FC = () => {
+const NewsCarousel: React.FC = () => {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -29,7 +29,7 @@ const NewsComponent: React.FC = () => {
       description:
         "Prezident yordamchisining ma’lum qilishicha, yangi davlat dasturi doirasida ayollarni skrining tekshiruvidan o‘tkazish va qo‘llab-quvvatlash tizimi takomillashtiriladi.",
       image:Image,
-      url: "#",
+      url: "/News",
       date: "2024-12-23",
     },
     {
@@ -38,7 +38,7 @@ const NewsComponent: React.FC = () => {
       description:
         "Vazirlar Mahkamasining “Jismoniy shaxslarni davlat tibbiyot muassasalariga hisobga qo‘yish bo‘yicha davlat xizmatini ko‘rsatishning ma’muriy reglamentini tasdiqlash to‘g‘risida”gi qarori qabul qilindi.",
       image:Image2,
-      url: "#",
+      url: "/News",
       date: "2024-12-22",
     },
     {
@@ -47,7 +47,7 @@ const NewsComponent: React.FC = () => {
       description:
         "“Avitsenna” nomi ostida O‘zbekistonning tibbiy va sog‘lomlashtirish turizmi brendi ishlab chiqiladi.",
       image: Image3,
-      url: "#",
+      url: "/News",
       date: "2024-12-20",
     },
   ];
@@ -111,7 +111,7 @@ const NewsComponent: React.FC = () => {
                     <h2 className="text-base font-bold text-gray-800">
                       {article.title}
                     </h2>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-600 mb-4 line-clamp-3">
                       {article.description}
                     </p>
                   </div>
@@ -137,4 +137,4 @@ const NewsComponent: React.FC = () => {
   );
 };
 
-export default NewsComponent;
+export default NewsCarousel;

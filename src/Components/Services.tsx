@@ -19,7 +19,7 @@ const Services = () => {
 
   return (
     <div className="bg-[#f8f8fa]">
-  <div className="max-w-screen-xl mx-auto px-4 mb-0">
+  <div className="max-w-screen-xl mx-auto px-4 mb-4 sm:mb-24">
     {/* Header */}
     <h2 className="text-3xl sm:text-2xl text-center font-semibold py-6">Xizmatlar</h2>
 

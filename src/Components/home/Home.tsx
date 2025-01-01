@@ -3,7 +3,7 @@ import About from "../About";
 import Services from "../Services";
 import PartnersCarousel from "../PartnersCarousel";
 import CarouselBanner from "../CarouselBanner";
-import NewsComponent from "../NewsComponent";
+import NewsCarousel from "../news/NewsCarousel";
 import Contact from "../contact-us/contact";
 
 const Home = () => {
@@ -31,10 +31,10 @@ const Home = () => {
         <>
           <CarouselBanner />
           <About />
-          <NewsComponent />
+          <NewsCarousel />
           <Services />
-          <PartnersCarousel />
           <Contact/>
+          <PartnersCarousel />
         </>
       )}
     </main>

@@ -7,6 +7,7 @@ import NotFound from "./Components/not-found/NotFound";
 import Profile from "./Components/profile/Profile";
 import Login from "./Components/auth/Login";
 import Register from "./Components/auth/Register";
+import NewsComponent from "./Components/news/NewsComponent";
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/profile" element={<Profile/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/register" element={<Register/>} />
+            <Route path="/News" element={<NewsComponent/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       </main>
