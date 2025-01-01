@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "ldrs"
+import { Link } from "react-router-dom";
 
 interface NewsArticle {
   id: number;
@@ -116,12 +117,11 @@ const NewsCarousel: React.FC = () => {
                     </p>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-gray-50 px-4 py-3 flex items-center justify-between border-gray-200">
-                    <a
-                      href={article.url}
+                    <Link to="/News"
                       className="bg-[#17776a] font-medium border border-[#17776a] text-white px-2 py-1 rounded-lg hover:bg-[#115c52] transition-colors"
                     >
                       Batafsil
-                    </a>
+                    </Link>
                     <span className="text-xs text-gray-600 flex items-center space-x-1">
                       <FaCalendarAlt className="w-4 h-4" />
                       <span>{article.date}</span>
