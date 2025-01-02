@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom"
+
 const NotFound = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
-    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <section className="bg-white">
+    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-32 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
-            <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">404</h1>
-            <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">Something's missing.</p>
-            <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">Sorry, we can't find that page. You'll find lots to explore on the home page. </p>
-            <a href="#" className="inline-flex text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</a>
+            <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 text-[#17776a]">404</h1>
+            <p className="mb-4 text-3xl tracking-tight font-bold md:text-4xl text-[#17776a]">Kechirasiz.</p>
+            <p className="mb-4 text-lg font-light text-[#17776a] ">Biz bu sahifani topa olmadik. Bosh sahifadan ko'p narsalarni topasiz.</p>
+            <Link to="/" className="bg-[#17776a] my-8 text-sm md:text-base font-medium border border-[#17776a] text-white px-4 md:px-6 py-2 rounded-xl hover:bg-[#115c52] transition-colors">
+              Bosh Sahifaga qaytish →
+            </Link>
         </div>   
     </div>
 </section>
