@@ -3,7 +3,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [captchaResult, setCaptchaResult] = useState("");
   const [captchaQuestion, setCaptchaQuestion] = useState("");
@@ -55,9 +55,9 @@ const Login = () => {
             </div>
             <input
               type="text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 text-gray-700 outline-none focus:ring focus:ring-[#17776a]"
               required
             />
